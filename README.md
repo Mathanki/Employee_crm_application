@@ -10,7 +10,7 @@ A robust, full-stack CRM and Employee Management application designed for effici
 * **Data Access:** Spring Data JPA & Hibernate (ORM)
 * **Database:** MySQL 8
 * **Validation:** Jakarta Bean Validation (Field-level constraints)
-* **Utilities:** Lombok (Boilerplate reduction) & HikariCP (High-performance connection pooling)
+* **Utilities:** Lombok (Boilerplate reduction)
 
 ## ✨ Key Features
 
