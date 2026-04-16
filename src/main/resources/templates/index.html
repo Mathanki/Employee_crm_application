@@ -9,31 +9,31 @@
 <div class="container my-5">
     <div class="card shadow">
         <div class="card-header bg-success-subtle text-dark d-flex justify-content-between align-items-center">
-            <h2 class="mb-0">Employee List</h2>
-            <a th:href="@{/showNewEmployeeForm}" class="btn btn-success btn-sm">Add Employee</a>
+            <h2 class="mb-0">Employee CRM</h2>
+            <a th:href="@{/showNewEmployeeForm}" class="btn btn-success btn-lg px-4 fw-bold shadow-sm ">Add Employee</a>
         </div>
         <div class="card-body">
             <div class="row g-3 mb-4">
                 <div class="col-md-3">
-                    <div class="card bg-primary text-dark text-center p-2 shadow-sm">
+                    <div class="card bg-primary text-white text-center p-2 shadow-sm">
                         <h6 class="fw-bold mb-0">Total Employees</h6>
                         <h3 class="mb-0" th:text="${totalCount}">0</h3>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card bg-success text-dark text-center p-2 shadow-sm">
+                    <div class="card bg-success text-white text-center p-2 shadow-sm">
                         <h6 class="fw-bold mb-0">Active Employees</h6>
                         <h3 class="mb-0" th:text="${activeCount}">0</h3>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card bg-warning text-dark text-center p-2 shadow-sm">
+                    <div class="card bg-warning text-white text-center p-2 shadow-sm">
                         <h6 class="fw-bold mb-0">On-Leave Employees</h6>
                         <h3 class="mb-0" th:text="${leaveCount}">0</h3>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card bg-secondary text-dark text-center p-2 shadow-sm">
+                    <div class="card bg-secondary text-white text-center p-2 shadow-sm">
                         <h6 class="fw-bold mb-0">Inactive Employees</h6>
                         <h3 class="mb-0" th:text="${inactiveCount}">0</h3>
                     </div>
