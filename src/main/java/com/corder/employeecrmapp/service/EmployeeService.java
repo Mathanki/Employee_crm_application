@@ -8,4 +8,6 @@ public interface EmployeeService {
     void save(Employee employee);
     Employee get(Long id);
     void delete(Long id);
+    long getTotalCountOfEmployeesByStatus(String status);
+    long getTotalCount();
 }

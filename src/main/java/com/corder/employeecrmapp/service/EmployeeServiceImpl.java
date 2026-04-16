@@ -44,4 +44,14 @@ public class EmployeeServiceImpl implements EmployeeService {
     public void delete(Long id) {
         employeeRepository.deleteById(id);
     }
+
+    @Override
+    public long getTotalCountOfEmployeesByStatus(String status) {
+        return employeeRepository.countByStatus(status);
+    }
+
+    @Override
+    public long getTotalCount() {
+        return employeeRepository.count();
+    }
 }

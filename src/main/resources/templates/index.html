@@ -13,6 +13,32 @@
             <a th:href="@{/showNewEmployeeForm}" class="btn btn-success btn-sm">Add Employee</a>
         </div>
         <div class="card-body">
+            <div class="row g-3 mb-4">
+                <div class="col-md-3">
+                    <div class="card bg-primary text-dark text-center p-2 shadow-sm">
+                        <h6 class="fw-bold mb-0">Total Employees</h6>
+                        <h3 class="mb-0" th:text="${totalCount}">0</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-success text-dark text-center p-2 shadow-sm">
+                        <h6 class="fw-bold mb-0">Active Employees</h6>
+                        <h3 class="mb-0" th:text="${activeCount}">0</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-warning text-dark text-center p-2 shadow-sm">
+                        <h6 class="fw-bold mb-0">On-Leave Employees</h6>
+                        <h3 class="mb-0" th:text="${leaveCount}">0</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-secondary text-dark text-center p-2 shadow-sm">
+                        <h6 class="fw-bold mb-0">Inactive Employees</h6>
+                        <h3 class="mb-0" th:text="${inactiveCount}">0</h3>
+                    </div>
+                </div>
+            </div>
 
             <form th:action="@{/}" class="row g-3 mb-4">
                 <input type="hidden" name="sortField" th:value="${sortField}"/>

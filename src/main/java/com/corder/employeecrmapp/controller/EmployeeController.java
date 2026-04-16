@@ -29,6 +29,11 @@ public class EmployeeController {
         model.addAttribute("sortDir", sortDir);
         model.addAttribute("reverseSortDir", sortDir.equals("asc") ? "desc" : "asc");
         model.addAttribute("keyword", keyword);
+        // Fetch counts for the Dashboard
+        model.addAttribute("totalCount", employeeService.getTotalCount());
+        model.addAttribute("activeCount", employeeService.getTotalCountOfEmployeesByStatus("Active"));
+        model.addAttribute("leaveCount", employeeService.getTotalCountOfEmployeesByStatus("On-Leave"));
+        model.addAttribute("inactiveCount", employeeService.getTotalCountOfEmployeesByStatus("Inactive"));
 
         return "index";
     }
