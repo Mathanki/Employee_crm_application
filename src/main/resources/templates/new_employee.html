@@ -17,14 +17,32 @@
                     <div class="mb-3">
                         <label class="form-label">First Name</label>
                         <input type="text" th:field="*{firstName}" class="form-control" placeholder="Enter first name" required>
+                        <div class="invalid-feedback" th:errors="*{firstName}"></div>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Last Name</label>
                         <input type="text" th:field="*{lastName}" class="form-control" placeholder="Enter last name" required>
+                        <div class="invalid-feedback" th:errors="*{lastName}"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Job Title</label>
+                        <input type="text" th:field="*{jobTitle}" class="form-control" th:errorclass="is-invalid">
+                        <div class="invalid-feedback" th:errors="*{jobTitle}"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Status</label>
+                        <select th:field="*{status}" class="form-select" th:errorclass="is-invalid">
+                            <option value="">-- Select Status --</option>
+                            <option value="Active">Active</option>
+                            <option value="On-Leave">On-Leave</option>
+                            <option value="Inactive">Inactive</option>
+                        </select>
+                        <div class="invalid-feedback" th:errors="*{status}"></div>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Email</label>
                         <input type="email" th:field="*{email}" class="form-control" placeholder="Enter email" required>
+                        <div class="invalid-feedback" th:errors="*{email}"></div>
                     </div>
                     <div class="d-grid gap-2">
                         <button type="submit" class="btn btn-success">Save Employee</button>

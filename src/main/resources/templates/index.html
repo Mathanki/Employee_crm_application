@@ -40,6 +40,8 @@
                         </a>
                     </th>
                     <th>Email</th>
+                    <th>Job Title</th>
+                    <th>Status</th>
                     <th>Actions</th>
                 </tr>
                 </thead>
@@ -48,6 +50,12 @@
                     <td th:text="${employee.firstName}"></td>
                     <td th:text="${employee.lastName}"></td>
                     <td th:text="${employee.email}"></td>
+                    <td th:text="${employee.jobTitle}"></td>
+                    <td>
+                        <span class="badge"
+                              th:classappend="${employee.status == 'Active' ? 'bg-success' : (employee.status == 'On-Leave' ? 'bg-warning' : 'bg-secondary')}"
+                              th:text="${employee.status}"></span>
+                    </td>
                     <td>
                         <a th:href="@{/showFormForUpdate/{id}(id=${employee.id})}" class="btn btn-info btn-sm text-white">Update</a>
                         <a th:href="@{/deleteEmployee/{id}(id=${employee.id})}" class="btn btn-danger btn-sm"
