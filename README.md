@@ -19,3 +19,6 @@ A robust, full-stack CRM and Employee Management application designed for effici
 * **Dynamic UI:** Responsive views powered by Thymeleaf and Bootstrap.
 * **Database Integration:** Persistent storage with optimized connection pooling.
 * **Clean Architecture:** Separated layers for Controllers, Services, and Repositories.
+
+## ✨ Dashboard Preview
+![Employee CRM Dashboard](src/main/resources/static/UI.png)
