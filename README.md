@@ -17,7 +17,7 @@ A robust, full-stack CRM and Employee Management application designed for effici
 * **Full CRUD Operations:** Create, Read, Update, and Delete employee records.
 * **Data Validation:** Robust server-side validation for employee details (Email, Name, etc.).
 * **Dynamic UI:** Responsive views powered by Thymeleaf and Bootstrap.
-* **Database Integration:** Persistent storage with optimized connection pooling.
+* **Database Integration:** Persistent storage.
 * **Clean Architecture:** Separated layers for Controllers, Services, and Repositories.
 
 ## ✨ Dashboard Preview
